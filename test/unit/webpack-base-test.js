@@ -4,8 +4,10 @@ describe("webpack.base.js test case", () => {
   console.log(baseConfig);
   it("entry", () => {
     assert.equal(
-      baseConfig.output.path,
-      "/Users/andysun/Desktop/webpack-study/builder-webpack/test/smoke/template/dist"
+      baseConfig.output.path.indexOf(
+        "builder-webpack/test/smoke/template/dist"
+      ) > -1,
+      true
     );
   });
 });
