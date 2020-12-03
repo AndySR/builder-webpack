@@ -1,0 +1,14 @@
+language: node__js
+sudo: false
+cache:
+  apt: true
+  directories:
+    - node_modules
+node_js: stable #设置相应的版本
+
+install:
+  - npm install -D #安装构建器依赖
+  - cd ./test/smoke/template
+  - npm install -D #安装模版项目依赖
+script:
+  - npm test

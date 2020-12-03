@@ -1,0 +1,4 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"], // 增加React的babel preset配置
+  "plugins": ["@babel/proposal-class-properties"]
+}
